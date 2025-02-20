@@ -46,7 +46,8 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
         <>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                <title>KiloIT</title>
+                <title></title>
+
             </Head>
             <Provider store={store}>
                {/*<ThemeModeProvider >*/}

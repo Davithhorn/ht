@@ -10,7 +10,6 @@ import Youtube from "@assets/icon/social/youtube.svg";
 import Phone from "@assets/icon/social/phone.svg";
 import Email from "@assets/icon/social/email.svg";
 import {Roboto} from "next/font/google";
-import localFont from "next/font/local";
 
 
 const roboto = Roboto({subsets: ['latin'], weight: '400'})
@@ -96,39 +95,39 @@ const Footer = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="mt-12 mt-md-8">
-                                <div className="fs-3 text-center fw-bolder text-md-end">ទំនាក់ទំនងមកកាន់យើង</div>
-                                <div
-                                    className={`d-flex flex-column gap-3 justify-content-center justify-content-md-end text-normal`}>
-                                    <div className="d-flex gap-5 justify-content-center justify-content-md-end">
-                                        <Image src={Email} alt="Email"/>
-                                        <a href="mailto: info@kiloit.com" target="_blank"
-                                           className={`text-white hover-underline-animation-white ${roboto.className}}`}>info@kiloit.com</a>
-                                    </div>
-                                    <div className="d-flex gap-5 justify-content-center justify-content-md-end">
-                                        <Image src={Phone} className="me-2" alt="Phone"/>
-                                        <div>
-                                            <div>
-                                                <a href="tel:07133450" target="_blank"
-                                                   className="text-white hover-underline-animation-white">០៧១ ៣៣៣
-                                                    ៤៥០</a>
-                                            </div>
-                                            <div>
-                                                <a href="tel:023966601" target="_blank"
-                                                   className="text-white hover-underline-animation-white">០២៣ ៩៦៦
-                                                    ៦០១</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        {/*    <div className="mt-12 mt-md-8">*/}
+                        {/*        <div className="fs-3 text-center fw-bolder text-md-end">ទំនាក់ទំនងមកកាន់យើង</div>*/}
+                        {/*        <div*/}
+                        {/*            className={`d-flex flex-column gap-3 justify-content-center justify-content-md-end text-normal`}>*/}
+                        {/*            <div className="d-flex gap-5 justify-content-center justify-content-md-end">*/}
+                        {/*                <Image src={Email} alt="Email"/>*/}
+                        {/*                <a href="mailto: info@kiloit.com" target="_blank"*/}
+                        {/*                   className={`text-white hover-underline-animation-white ${roboto.className}}`}>info@kiloit.com</a>*/}
+                        {/*            </div>*/}
+                        {/*            <div className="d-flex gap-5 justify-content-center justify-content-md-end">*/}
+                        {/*                <Image src={Phone} className="me-2" alt="Phone"/>*/}
+                        {/*                <div>*/}
+                        {/*                    <div>*/}
+                        {/*                        <a href="tel:07133450" target="_blank"*/}
+                        {/*                           className="text-white hover-underline-animation-white">០៧១ ៣៣៣*/}
+                        {/*                            ៤៥០</a>*/}
+                        {/*                    </div>*/}
+                        {/*                    <div>*/}
+                        {/*                        <a href="tel:023966601" target="_blank"*/}
+                        {/*                           className="text-white hover-underline-animation-white">០២៣ ៩៦៦*/}
+                        {/*                            ៦០១</a>*/}
+                        {/*                    </div>*/}
+                        {/*                </div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
                         </div>
                     </div>
                 </div>
                 <div className="line-footer mt-8"/>
                 <div className="mt-18 mb-8">
                     <p className={`text-normal ${roboto.className}`}>
-                        © KiloHealth {new Date().getFullYear()}. All Rights Reserved.
+                        © Horn david {new Date().getFullYear()}. All Rights Reserved.
                     </p>
                 </div>
             </footer>
