@@ -4,7 +4,7 @@ import {Container, Modal} from "react-bootstrap";
 import Link from "next/link";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Virtual} from "swiper/modules";
-import {card4} from "../../../constant/card";
+// import {card4} from "../../../constant/card";
 import YouTubeModal from "../modal/YouTubeModal";
 
 // Import Swiper styles
@@ -75,30 +75,30 @@ const ScrollCard2: FC<Props> = ({
                     slidesPerView={4}
                     virtual
                 >
-                    {card4.map((item, index) => (
-                        <SwiperSlide key={index} virtualIndex={index}>
-                            <div onClick={handleOpenModal} className="cursor-pointer">
-                                <div className="card card-hover-back bg-transparent">
-                                    <div className="position-relative">
-                                        <Image
-                                            src={item.featureImage}
-                                            layout="responsive"
-                                            width={601}
-                                            height={318}
-                                            alt="portrait"
-                                        />
-                                        <div className="overlay"></div>
-                                        {/* Add overlay here */}
-                                        <Image
-                                            src={PLay}
-                                            alt="play"
-                                            className="position-absolute bottom-6px end-6px"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
+                    {/*{card4.map((item, index) => (*/}
+                    {/*    <SwiperSlide key={index} virtualIndex={index}>*/}
+                    {/*        <div onClick={handleOpenModal} className="cursor-pointer">*/}
+                    {/*            <div className="card card-hover-back bg-transparent">*/}
+                    {/*                <div className="position-relative">*/}
+                    {/*                    <Image*/}
+                    {/*                        src={item.featureImage}*/}
+                    {/*                        layout="responsive"*/}
+                    {/*                        width={601}*/}
+                    {/*                        height={318}*/}
+                    {/*                        alt="portrait"*/}
+                    {/*                    />*/}
+                    {/*                    <div className="overlay"></div>*/}
+                    {/*                    /!* Add overlay here *!/*/}
+                    {/*                    <Image*/}
+                    {/*                        src={PLay}*/}
+                    {/*                        alt="play"*/}
+                    {/*                        className="position-absolute bottom-6px end-6px"*/}
+                    {/*                    />*/}
+                    {/*                </div>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </SwiperSlide>*/}
+                    {/*))}*/}
 
                 </Swiper>
                 <div className=" my-8 d-flex justify-content-between align-items-center">

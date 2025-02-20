@@ -10,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^7.18.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@next/env": "^14.2.5",
     "@react-google-maps/api": "^2.19.3",
     "@react-icons/all-files": "^4.1.0",

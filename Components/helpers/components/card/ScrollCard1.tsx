@@ -4,7 +4,7 @@ import {Container} from "react-bootstrap";
 import Link from "next/link";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Virtual} from "swiper/modules";
-import {card3} from "../../../constant/card";
+// import {card3} from "../../../constant/card";
 
 // Import Swiper styles
 import "swiper/css";
@@ -65,32 +65,32 @@ const CustomCard1: FC<Props> = ({category, link, className, delay, effect}) => {
                     slidesPerView={3}
                     virtual
                 >
-                    {card3.map((item, index) => (
-                        <SwiperSlide key={index} virtualIndex={index} className="p-1">
-                            <Link href={item.link ?? ""} passHref>
-                                <div className="card card-hover-back bg-transparent">
-                                    <div className="card-image-container position-relative">
-                                        <Image
-                                            src={item.featureImage}
-                                            alt={item.title}
-                                            layout="responsive"
-                                            width={601}
-                                            height={318}
-                                        />
-                                        <div className="overlay"></div>
-                                        <Image
-                                            src={PLay}
-                                            alt="play"
-                                            className="position-absolute bottom-6px end-6px"
-                                        />
-                                    </div>
-                                    <div className="card-body card-body-back card-body-padding-scroll">
-                                        <h1 className="text-black-44 text-normal lh-lg max-line-1">{item.title}</h1>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-                    ))}
+                    {/*{card3.map((item, index) => (*/}
+                    {/*    <SwiperSlide key={index} virtualIndex={index} className="p-1">*/}
+                    {/*        <Link href={item.link ?? ""} passHref>*/}
+                    {/*            <div className="card card-hover-back bg-transparent">*/}
+                    {/*                <div className="card-image-container position-relative">*/}
+                    {/*                    <Image*/}
+                    {/*                        src={item.featureImage}*/}
+                    {/*                        alt={item.title}*/}
+                    {/*                        layout="responsive"*/}
+                    {/*                        width={601}*/}
+                    {/*                        height={318}*/}
+                    {/*                    />*/}
+                    {/*                    <div className="overlay"></div>*/}
+                    {/*                    <Image*/}
+                    {/*                        src={PLay}*/}
+                    {/*                        alt="play"*/}
+                    {/*                        className="position-absolute bottom-6px end-6px"*/}
+                    {/*                    />*/}
+                    {/*                </div>*/}
+                    {/*                <div className="card-body card-body-back card-body-padding-scroll">*/}
+                    {/*                    <h1 className="text-black-44 text-normal lh-lg max-line-1">{item.title}</h1>*/}
+                    {/*                </div>*/}
+                    {/*            </div>*/}
+                    {/*        </Link>*/}
+                    {/*    </SwiperSlide>*/}
+                    {/*))}*/}
 
                 </Swiper>
             </div>
