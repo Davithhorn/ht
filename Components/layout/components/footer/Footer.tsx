@@ -76,25 +76,25 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center text-md-end">
-                            <div className="text-normal mt-10 mt-md-0">
-                                <span className="fs-3 fw-bolder">តាមដានពួកយើងនៅលើ</span>
-                                <div className="d-flex justify-content-center justify-content-md-end gap-3 mt-5">
-                                    <Link href="https://web.facebook.com/kilohealthcambodia" target="_blank"
-                                          className="bg-hover-icon">
-                                        <Image src={Facebook} alt="Facebook"/>
-                                    </Link>
-                                    <Link href="/" target="_blank" className="bg-hover-icon">
-                                        <Image src={Telegram} alt="Telegram"/>
-                                    </Link>
-                                    <Link href="/" target="_blank" className="bg-hover-icon">
-                                        <Image src={TikTok} alt="TikTok"/>
-                                    </Link>
-                                    <Link href="/" target="_blank" className="bg-hover-icon">
-                                        <Image src={Youtube} alt="Youtube"/>
-                                    </Link>
-                                </div>
-                            </div>
+                        {/*<div className="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center text-md-end">*/}
+                        {/*    <div className="text-normal mt-10 mt-md-0">*/}
+                        {/*        <span className="fs-3 fw-bolder">តាមដានពួកយើងនៅលើ</span>*/}
+                        {/*        <div className="d-flex justify-content-center justify-content-md-end gap-3 mt-5">*/}
+                        {/*            <Link href="https://web.facebook.com/kilohealthcambodia" target="_blank"*/}
+                        {/*                  className="bg-hover-icon">*/}
+                        {/*                <Image src={Facebook} alt="Facebook"/>*/}
+                        {/*            </Link>*/}
+                        {/*            <Link href="/" target="_blank" className="bg-hover-icon">*/}
+                        {/*                <Image src={Telegram} alt="Telegram"/>*/}
+                        {/*            </Link>*/}
+                        {/*            <Link href="/" target="_blank" className="bg-hover-icon">*/}
+                        {/*                <Image src={TikTok} alt="TikTok"/>*/}
+                        {/*            </Link>*/}
+                        {/*            <Link href="/" target="_blank" className="bg-hover-icon">*/}
+                        {/*                <Image src={Youtube} alt="Youtube"/>*/}
+                        {/*            </Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
                         {/*    <div className="mt-12 mt-md-8">*/}
                         {/*        <div className="fs-3 text-center fw-bolder text-md-end">ទំនាក់ទំនងមកកាន់យើង</div>*/}
                         {/*        <div*/}
@@ -121,7 +121,7 @@ const Footer = () => {
                         {/*            </div>*/}
                         {/*        </div>*/}
                         {/*    </div>*/}
-                        </div>
+                        {/*</div>*/}
                     </div>
                 </div>
                 <div className="line-footer mt-8"/>
