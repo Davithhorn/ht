@@ -1,0 +1,60 @@
+
+.Pagination {
+  $this: &;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  outline: transparent;
+
+  & > li {
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+  }
+
+  & > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray-300;
+    }
+  }
+
+  & > #{$this}__active > a {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+  }
+
+  & > #{$this}__active > a,
+  & > #{$this}__active > a:hover,
+  & > #{$this}__active > a:focus {
+    background-color: $primary;
+    border-color: $primary;
+    outline: transparent;
+    cursor: default;
+  }
+
+  & > .disabled > a {
+    cursor: default;
+
+    svg {
+      fill: $gray-300;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
